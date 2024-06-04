@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.section`
   border-radius: var(--border-radius);
@@ -13,8 +13,8 @@ const Wrapper = styled.section`
     border-radius: 0;
     box-shadow: none;
     padding: 0;
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
   }
   .form-row {
     margin-bottom: 0;
@@ -36,9 +36,12 @@ const Wrapper = styled.section`
       column-gap: 1rem;
     }
   }
+
   @media (min-width: 1120px) {
     .form-center {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      column-gap: 1rem;
     }
   }
 `;
